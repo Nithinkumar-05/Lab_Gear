@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "FrontEnd",
-    "slug": "FrontEnd",
+    "name": "LabGear",
+    "slug": "lab_gear",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/lab_gear.jpg",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
@@ -17,12 +17,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/lab_gear.jpg",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/lab_gear.jpg"
     }
   }
 }
