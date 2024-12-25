@@ -1,12 +1,18 @@
+// LoginScreen.js
 import React, { useState } from 'react';
 import { View, Image } from 'react-native';
 import { TextInput, Button, Text, Checkbox } from 'react-native-paper';
 
-export default function LoginScreen({ navigation }) {
+export default function LoginScreen({ navigation, setIsLoggedIn }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [checked, setChecked] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+
+  const handleLogin = () => {
+    // Add your login logic here
+    setIsLoggedIn(true);
+  };
 
   return (
     <View className="flex-1 bg-white justify-center items-center px-6">
@@ -56,7 +62,7 @@ export default function LoginScreen({ navigation }) {
 
         <Button 
           mode="contained"
-          onPress={() => navigation.replace('Home')}
+          onPress={handleLogin}
           className="mt-4"
           contentStyle="py-2"
           theme={{
